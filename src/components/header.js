@@ -2,21 +2,25 @@ import React from 'react';
 import {Text,View, StyleSheet} from 'react-native';
 
 
-const Header = () => {
+const Header = (props) => {
 
     return (
         <View style={style.viewStyle}>
-            <Text style={style.textSize}> Albuns </Text>
+            <Text style={style.textSize}> {props.headerName} </Text>
         </View>
     );
 }
 
 const style = StyleSheet.create({
     viewStyle:{
-        backgroundColor: 'red',
+        backgroundColor: 'gray',
         alignItems:'center',
         justifyContent:'center',
-        height: 100
+        height: 100,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height:20},
+        shadowOpacity: 0.9,
+        position: 'relative'
         
     },
     
