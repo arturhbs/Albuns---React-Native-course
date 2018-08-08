@@ -1,15 +1,19 @@
 // import files 
 import React from 'react';
-import { AppRegistry} from 'react-native';
+import { AppRegistry, View} from 'react-native';
 import Header from './src/components/header';
+import AlbumList from './src/components/AlbumLIst';
 
 
 // create component
 
 const App = () => {
     return (
-        <Header headerName={'Ola'}/>
-    )
+        <View>
+            <Header headerName={'Ola'}/>
+            <AlbumList />
+        </View>
+    );
 }
 
 
